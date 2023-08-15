@@ -19,4 +19,3 @@ resource "aws_ssm_parameter" "HelloWorld" {
   type  = "String"
   value = "trail"
 }
-}
