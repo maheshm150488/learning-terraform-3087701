@@ -5,9 +5,9 @@ resource "bitbucket_project" "example" {
   description = "An example project"
   is_private  = true
 }
-resource "bitbucket_repository" "example-repo" {
+resource "bitbucket_repository" "examplerepo" {
   workspace        = "rmit_sl_mb"
-  name             = "example-repo"
+  name             = "examplerepo"
   project_key      = "EXP"
   description      = "An example repository"
   is_private       = true
