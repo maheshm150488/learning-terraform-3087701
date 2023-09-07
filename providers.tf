@@ -1,8 +1,8 @@
-terraform {
+erraform {
   required_providers {
     bitbucket = {
-      source = "zahiar/bitbucket"
-      version = "1.6.0"
+      source = "DrFaust92/bitbucket"
+      version = "2.35.0"
     }
   }
 }
