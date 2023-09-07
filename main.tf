@@ -8,7 +8,7 @@ resource "bitbucket_project" "terrap1" {
 resource "bitbucket_repository" "terrapr1" {
   workspace        = "e95441"
   name             = "example-repo"
-  project_key      = "EXP"
+  project_key      = "TGT"
   description      = "An example repository created via terraform"
   is_private       = true
   has_wiki         = true
