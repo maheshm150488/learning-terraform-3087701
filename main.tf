@@ -1,11 +1,11 @@
-resource "bitbucket_project" "example" {
+resource "bitbucket_project" "example1" {
   workspace   = "rmit_sl_mb"
   name        = "TerraformGeneratedTemplate"
   key         = "TGT"
   description = "An example project"
   is_private  = true
 }
-resource "bitbucket_repository" "example" {
+resource "bitbucket_repository" "example1" {
   workspace        = "workspace-slug"
   name             = "example-repo"
   project_key      = "EXP"
