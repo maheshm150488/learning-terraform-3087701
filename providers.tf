@@ -1,12 +1,13 @@
 terraform {
   required_providers {
     bitbucket = {
-      source = "DrFaust92/bitbucket"
-      version = "2.35.0"
+      source = "strollby/bitbucket"
+      version = "0.1.2"
     }
   }
 }
+
 provider "bitbucket" {
   username = "e95441"
-  password = "ATBBZnCS3gYFagSDcds9wpN8U2ek59341D76" # you can also use app passwords
+  password = "ATBBZnCS3gYFagSDcds9wpN8U2ek59341D76"
 }
