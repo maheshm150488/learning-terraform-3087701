@@ -1,11 +1,13 @@
 terraform {
   required_providers {
-    aws = {
-      source  = "hashicorp/aws"
+    bitbucket = {
+      source = "zahiar/bitbucket"
+      version = "1.6.0"
     }
   }
 }
 
-provider "aws" {
-  region  = "ap-southeast-2"
+provider "bitbucket" {
+  username = "studentlifecycle_automation" 
+  password = "V6qrqZtRF4LDHWCkzjDb"
 }
