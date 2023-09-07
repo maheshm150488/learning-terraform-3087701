@@ -1,4 +1,4 @@
-resource "bitbucket_project" "example" {
+resource "bitbucket_project" "proj" {
   workspace   = "rmit_sl_mb"
   name        = "TerraformGeneratedTemplate"
   key         = "TGT"
@@ -21,12 +21,12 @@ resource "bitbucket_group" "gp1" {
   name       = "tgt_sample_repo_ro"
   permission = "read"
 }
-resource "bitbucket_group" "example" {
+resource "bitbucket_group" "gp2" {
   workspace  = "{98db183f-f30e-42f0-ae87-66ca9a74c5f0}"
   name       = "tgt_sample_repo_wr"
   permission = "write"
 }
-resource "bitbucket_group" "example" {
+resource "bitbucket_group" "gp3" {
   workspace  = "{98db183f-f30e-42f0-ae87-66ca9a74c5f0}"
   name       = "tgt_sample_repo_admin"
   permission = "admin"
