@@ -1,5 +1,4 @@
 resource "bitbucket_project" "terrap1" {
-  workspace   = "rmit_sl_mb"
   name        = "TerraformGeneratedTemplate"
   key         = "TGT"
   description = "An example project"
@@ -7,14 +6,12 @@ resource "bitbucket_project" "terrap1" {
   owner = "my-team"
 }
 resource "bitbucket_repository" "terrapr1" {
-  workspace        = "rmit_sl_mb"
   name             = "example-repo"
   project_key      = "TGT"
   description      = "An example repository created via terraform"
   is_private       = true
   has_wiki         = true
   fork_policy      = "no_forks"
-  enable_pipelines = false
   language         = "go"
   owner = "myteam"
 }
