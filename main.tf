@@ -1,5 +1,5 @@
 resource "bitbucket_project" "example1" {
-  workspace   = "rmit_sl_mb"
+  workspace   = "e95441"
   name        = "TerraformGeneratedTemplate"
   key         = "TGT"
   description = "An example project"
