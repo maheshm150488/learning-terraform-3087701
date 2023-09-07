@@ -16,7 +16,6 @@ resource "bitbucket_repository" "example" {
   enable_pipelines = false
   language         = "go"
 }
-
 resource "bitbucket_group" "gp1" {
   workspace  = "{98db183f-f30e-42f0-ae87-66ca9a74c5f0}"
   name       = "tgt_sample_repo_ro"
