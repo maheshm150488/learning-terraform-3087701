@@ -1,4 +1,4 @@
-resource "bitbucket_project" "terrap1" {
+resource "bitbucket_project" "example" {
   workspace   = "e95441"
   name        = "TerraformGeneratedTemplate"
   key         = "TGT"
