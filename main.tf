@@ -1,3 +1,7 @@
+provider "bitbucket" {
+  username = "e95441" 
+  password = "ATBBZnCS3gYFagSDcds9wpN8U2ek59341D76"
+}
 resource "bitbucket_project" "terrap1" {
   name        = "TerraformGeneratedTemplate"
   key         = "TGT"
