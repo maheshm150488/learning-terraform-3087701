@@ -5,3 +5,14 @@ resource "bitbucket_project" "example" {
   description = "An example project"
   is_private  = true
 }
+resource "bitbucket_repository" "example" {
+  workspace        = "rmit_sl_mb"
+  name             = "example-repo"
+  project_key      = "EXP"
+  description      = "An example repository"
+  is_private       = true
+  has_wiki         = true
+  fork_policy      = "no_forks"
+  enable_pipelines = false
+  language         = "java"
+}
