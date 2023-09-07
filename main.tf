@@ -1,33 +1,7 @@
-resource "bitbucket_project" "example1" {
-  workspace   = "e95441"
-  name        = "TerraformGeneratedTemplate"
-  key         = "TGT"
+resource "bitbucket_project" "example" {
+  workspace   = "rmit_sl_mb"
+  name        = "Example Project"
+  key         = "EXP"
   description = "An example project"
   is_private  = true
-}
-resource "bitbucket_repository" "example1" {
-  workspace        = "workspace-slug"
-  name             = "example-repo"
-  project_key      = "EXP"
-  description      = "An example repository created via terraform"
-  is_private       = true
-  has_wiki         = true
-  fork_policy      = "no_forks"
-  enable_pipelines = false
-  language         = "go"
-}
-resource "bitbucket_group" "gp1" {
-  workspace  = "{98db183f-f30e-42f0-ae87-66ca9a74c5f0}"
-  name       = "tgt_sample_repo_ro"
-  permission = "read"
-}
-resource "bitbucket_group" "gp2" {
-  workspace  = "{98db183f-f30e-42f0-ae87-66ca9a74c5f0}"
-  name       = "tgt_sample_repo_wr"
-  permission = "write"
-}
-resource "bitbucket_group" "gp3" {
-  workspace  = "{98db183f-f30e-42f0-ae87-66ca9a74c5f0}"
-  name       = "tgt_sample_repo_admin"
-  permission = "admin"
 }
